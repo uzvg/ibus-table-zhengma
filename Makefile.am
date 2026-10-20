@@ -21,25 +21,20 @@
 
 SUBDIRS = \
 	icons \
-	m4 \
 	tables \
 	docs \
 	$(NULL)
 
 dist_doc_DATA = \
 	README \
+	NOTICE \
 	$(NULL)
-
-ACLOCAL_AMFLAGS = -I m4
 
 EXTRA_DIST = \
 	autogen.sh \
 	$(NULL)
 #	@PACKAGE_NAME@.spec.in \
 #	$(NULL)
-
-noinst_DIST = \
-	$(NULL)
 
 
 #DISTCLEANFILES = \

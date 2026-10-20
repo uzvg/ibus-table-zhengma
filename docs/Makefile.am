@@ -23,8 +23,3 @@
 dist_doc_DATA = \
 	ZiGenBiao.pdf \
 	$(NULL)
-
-
-EXTRA_DIST = \
-	ZiGenBiao.pdf \
-	$(NULL)
