@@ -100,3 +100,12 @@ ibus-table-zhengma中使用了5码郑码的词组编码方案，2字词的编码
 最大的好处是，5码郑码的编码方式和原先的4码是兼容的，只是添加了一个新的编码上去而已，所以对即使用原先的编码输入仍然可以得到一样的结果。
 
 五码郑码的编码方案是www.zmfans.cn/bbs上的坛友"郑码大师"提出的，在此鸣谢!
+
+== License ==
+
+The build scripts and the original table contributions are licensed under
+the GNU General Public License, version 3 or (at your option) any later
+version (GPL-3.0-or-later). See COPYING for the license text.
+
+Third-party data provenance is documented in NOTICE. Copyright in those
+portions remains with their respective holders.

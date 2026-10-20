@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 # vim:set ts=4
 #
 # ibus-table-zhengma - ZhengMa for IBus Table

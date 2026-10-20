@@ -1,17 +1,19 @@
-### File header must not be modified
-### This file must be encoded into UTF-8.
+### File header format must not be modified; metadata (LICENSE, SERIAL_NUMBER)
+### may be updated. This file must be encoded into UTF-8.
+### SPDX-License-Identifier: GPL-3.0-or-later
 ### ZhengMa is invented by 郑易里 & 郑珑, Thanks them for this excellent
 ### Input Method!
 ### Special thanks to 張韡武, who provide his own table to me to
 ### redistribute. 
 ### The character encodings for GB18030 is come from ZhengMa-6.6,
 ### the COPYRIGHTS is belong to ZhongYi Inc.;
-### CJK-A goucima is add by myself, granted as GPL.
+### CJK-A goucima is added by Yu Yuwei and licensed under GPL-3.0-or-later.
 ### CJK-B, CJK-C character encodings are come from 一呜惊人 <ranglming@126.com>
 ### This table use the 5-code-ZhengMa schema to encode phrases, which
 ### make phrases above 2 characters more discreted. This method is
 ### suggested by "郑码大师" in www.zmfans.cn/bbs
-### The other parts of this table under LGPL
+### The original contributions in this table are licensed under
+### GPL-3.0-or-later. See the NOTICE file for third-party provenance.
 
 SCIM_Generic_Table_Phrase_Library_TEXT
 VERSION_1_0
@@ -48,7 +50,7 @@ LANGUAGES = zh_CN,zh_HK,zh_TW
 AUTHOR = Yu Yuwei <acevery@gmail.com> 
 
 ### License
-LICENSE = GPL-3
+LICENSE = GPL-3.0-or-later
 
 ### Prompt string to be displayed in the status area.
 STATUS_PROMPT = CN
