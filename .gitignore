@@ -1,0 +1,30 @@
+# Autotools generated files
+/Makefile
+/Makefile.in
+/*/Makefile
+/*/Makefile.in
+/aclocal.m4
+/autom4te.cache/
+/config.log
+/config.status
+/configure
+/install-sh
+/INSTALL
+/missing
+/compile
+/depcomp
+/test-driver
+/ar-lib
+/ltmain.sh
+
+# Generated input-method database
+/tables/*.db
+
+# Release archives
+/*.tar.gz
+/*.tar.xz
+/*.tar.bz2
+
+# Editor and OS files
+*~
+.DS_Store

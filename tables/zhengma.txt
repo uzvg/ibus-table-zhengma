@@ -26,9 +26,9 @@ BEGIN_DEFINITION
 UUID = 67922aa3-416f-9868-2162-118fcef1c29b
 
 ### A unique number indicates the version of this file.
-### For example the last modified date of this file.
-### This number must be less than 2^32.
-SERIAL_NUMBER = 20090218
+### Use the YYYYMMDD date of the last change and bump it whenever the
+### TABLE or GOUCI data changes. This number must be less than 2^32.
+SERIAL_NUMBER = 20261020
 
 ### ICON = @SCIM_ICONDIR@/zhengma.png
 ICON = zhengma.svg

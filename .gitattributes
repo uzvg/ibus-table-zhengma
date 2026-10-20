@@ -1,0 +1,5 @@
+# Keep text sources in LF form and treat generated binaries as binary.
+* text=auto eol=lf
+tables/zhengma.txt text eol=lf
+*.db binary
+*.pdf binary

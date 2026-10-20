@@ -20,7 +20,7 @@
 #
 
 createdb = \
-	$(IBUS_TABLE_CREATEDB) 
+	$(IBUS_TABLE_CREATEDB)
 
 if IBUS_TABLE_EXTRA_PHRASES
 createdb += -e @IBUS_TABLE_EXTRAPHRASE@
@@ -36,10 +36,12 @@ EXTRA_DIST = \
 	zhengma.txt \
 	$(NULL)
 
-DISTCLEANFILES = \
-	*.db \
+CLEANFILES = \
+	zhengma.db \
 	$(NULL)
 
-.txt.db:
+# Rebuild when either the table source or the configure output changes,
+# for example when switching --enable-extra-phrases.
+zhengma.db: $(srcdir)/zhengma.txt Makefile
 	$(createdb) -n $@ -s $<
 
