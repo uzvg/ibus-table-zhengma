@@ -28,5 +28,5 @@ custom_target('zhengma.db',
   build_by_default: true)
 
 install_data('icons/zhengma.svg', install_dir: iconsdir)
-install_data('COPYING', 'README', 'NOTICE', install_dir: docdir)
+install_data('COPYING', 'README.md', 'NOTICE', install_dir: docdir)
 install_data('docs/ZiGenBiao.pdf', install_dir: docdir)

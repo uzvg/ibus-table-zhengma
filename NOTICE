@@ -4,7 +4,7 @@ Third-party data and provenance
 ibus-table-zhengma is a compilation of ZhengMa input-method data. The
 project's build scripts and original table contributions are licensed under
 GPL-3.0-or-later (see COPYING). The following portions have their own
-provenance as recorded in the table header and README:
+provenance as recorded in the table header and README.md:
 
 * GB18030 character encodings: derived from ZhengMa-6.6. Copyright belongs
   to ZhongYi Inc. (中易公司).
@@ -17,7 +17,7 @@ provenance as recorded in the table header and README:
 * Five-code ZhengMa phrase scheme: suggested by "郑码大师" on
   www.zmfans.cn/bbs.
 
-* docs/ZiGenBiao.pdf: the ZhengMa root chart that, according to the README,
+* docs/ZiGenBiao.pdf: the ZhengMa root chart that, according to README.md,
   was made available by ZhongYi on the ZhengMa fans forum.
 
 This project does not relicense third-party material. Copyright in those
