@@ -24,7 +24,6 @@
 - `pkg-config`
 - `ibus-table`，并提供 `ibus-table-createdb`
 - 可选：`ibus-table-extraphrase >= 1.1.0`，用于额外词库
-- 可选：`jq`，仅卸载时用于读取安装清单
 
 > 本项目没有编译型语言代码，因此不需要 C/C++ 编译器。
 
@@ -86,22 +85,12 @@ meson compile -C build
 
 ## 卸载
 
-Meson 没有内置 `uninstall`，使用安装清单删除。下面的 `build` 要替换成实际使用的构建目录，例如 `build-extra`：
+Meson 没有内置 `uninstall`，但构建目录的 `build.ninja` 会生成 `uninstall`
+目标，按安装清单删除文件。下面的 `build` 要替换成实际使用的构建目录，例如 `build-extra`：
 
 ```bash
-# 查看安装清单
-meson introspect build --installed | jq -r 'to_entries[].value'
-
-# 删除安装清单中的文件
-meson introspect build --installed \
-  | jq -r 'to_entries[].value' \
-  | xargs -r sudo rm -f --
-
-# 删除空目录
-sudo rmdir --ignore-fail-on-non-empty \
-  /usr/share/ibus-table/tables \
-  /usr/share/ibus-table/icons \
-  /usr/share/doc/ibus-table-zhengma
+# 按安装清单卸载
+sudo ninja -C build uninstall
 ```
 
 > 用 `--destdir` 打包安装的文件不会进入系统，直接删除 staging 目录即可。
