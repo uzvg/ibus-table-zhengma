@@ -1,22 +1,3 @@
-# Autotools generated files
-/Makefile
-/Makefile.in
-/*/Makefile
-/*/Makefile.in
-/aclocal.m4
-/autom4te.cache/
-/config.log
-/config.status
-/configure
-/install-sh
-/INSTALL
-/missing
-/compile
-/depcomp
-/test-driver
-/ar-lib
-/ltmain.sh
-
 # Meson build directories
 /build*/
 /meson-dist/

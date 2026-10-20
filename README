@@ -2,9 +2,28 @@ encoding: UTF-8
 
 Requirements:
 
-    You need to install ibus-table first; if you want to integrate extra
-    Chinese phrases, you also need to install ibus-table-extraphrase
-    beforehand and pkgconfig in your system.
+    To build, install meson, ninja, pkg-config, and ibus-table (which
+    provides ibus-table-createdb). To include extra Chinese phrases,
+    also install ibus-table-extraphrase.
+
+Building:
+
+    meson setup build
+    meson compile -C build
+    sudo meson install -C build
+
+    # with extra phrases
+    meson setup build-extra -Dextra_phrases=true
+    meson compile -C build-extra
+    sudo meson install -C build-extra
+
+    # staged install, for example for packaging
+    meson setup build-pkg --prefix=/usr
+    meson compile -C build-pkg
+    DESTDIR=/tmp/pkg meson install -C build-pkg
+
+    # create a release archive (requires a git checkout)
+    meson dist -C build
 
 Introduction to ZhengMa:
 
