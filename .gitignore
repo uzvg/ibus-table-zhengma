@@ -17,6 +17,11 @@
 /ar-lib
 /ltmain.sh
 
+# Meson build directories
+/build*/
+/meson-dist/
+/dist/
+
 # Generated input-method database
 /tables/*.db
 

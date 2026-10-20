@@ -1,0 +1,4 @@
+option('extra_phrases',
+  type: 'boolean',
+  value: false,
+  description: 'Include extra phrases from ibus-table-extraphrase')
