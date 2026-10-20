@@ -31,8 +31,8 @@
 ## 构建与安装
 
 ```bash
-# 创建构建目录；默认安装前缀为 /usr/local
-meson setup build
+# 创建构建目录，安装前缀为 /usr
+meson setup build --prefix=/usr
 
 # 生成 build/zhengma.db
 meson compile -C build
@@ -69,7 +69,7 @@ meson install -C build-pkg --destdir "$PWD/pkg"
 
 ```bash
 # 新建启用额外词库的构建目录
-meson setup build-extra -Dextra_phrases=true
+meson setup build-extra --prefix=/usr -Dextra_phrases=true
 
 # 编译并安装
 meson compile -C build-extra
@@ -97,11 +97,11 @@ meson introspect build --installed \
   | jq -r 'to_entries[].value' \
   | xargs -r sudo rm -f --
 
-# 删除空目录；使用自定义 prefix 时请相应调整
+# 删除空目录
 sudo rmdir --ignore-fail-on-non-empty \
-  /usr/local/share/ibus-table/tables \
-  /usr/local/share/ibus-table/icons \
-  /usr/local/share/doc/ibus-table-zhengma
+  /usr/share/ibus-table/tables \
+  /usr/share/ibus-table/icons \
+  /usr/share/doc/ibus-table-zhengma
 ```
 
 > 用 `--destdir` 打包安装的文件不会进入系统，直接删除 staging 目录即可。
